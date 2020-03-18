@@ -1,0 +1,853 @@
+/* ------ Fonts ------ */
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('../fonts/MuseoSansCyrl-700.eot');
+    src: url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-700.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-700.ttf') format('truetype'),
+        url('../fonts/MuseoSansCyrl-700.svg#MuseoSansCyrl-700') format('svg');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('../fonts/MuseoSansCyrl-300.eot');
+    src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-300.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-300.ttf') format('truetype'),
+        url('../fonts/MuseoSansCyrl-300.svg#MuseoSansCyrl-300') format('svg');
+    font-weight: 300;
+   
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('../fonts/MuseoSansCyrl-100.eot');
+    src: url('../fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoSansCyrl-100.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-100.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-100.ttf') format('truetype'),
+        url('../fonts/MuseoSansCyrl-100.svg#MuseoSansCyrl-100') format('svg');
+    font-weight: 100;
+    
+}
+
+/* ------ Spezifikation ------ */
+
+body {
+	font-family: 'Museo Sans Cyrl', sans-serif;
+	font-size: 15px;
+	color: #2d3033;
+	padding: 0;
+	margin: 0;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+    font-size: 14px;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	line-height: 1.6em;
+	line-height: 1.06em;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 45px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 19px;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+}
+
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active
+
+ {
+	outline: none;
+}
+
+.container-fluid_plain {
+	padding: 0;
+}
+
+.btn {
+	background: #4acc4d;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	display: block;
+	width: 190px;
+	padding: 7px 0 9px;
+	font-weight: 700;
+	border-radius: 15px;
+	border: 2px solid #4acc4d;
+}
+
+.btn:hover {
+	background: #fff;
+	color: #1cb883;
+	border: 2px solid #4acc4d;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+
+/* ------ header ------ */
+
+
+.header {
+
+}
+
+.toppanel {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 5px solid #58647a;
+	border-bottom: 4px solid #c6cce0
+}
+
+.logo {
+	background: #ed7806;
+	width: 130px;
+	height: 50px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+
+}
+
+.logo__text {
+	background: #fff;
+	color: #000;
+	width: 100%;
+	text-align: center;
+}
+
+.menu {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu__wrap {
+
+}
+
+.menu__item {
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+	margin-right: 35px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.menu__item:hover {
+	background: #f9a013;
+	color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 190px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f9a013;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.nav__tele {
+	font-size: 17px;
+	font-weight: 700;
+	color: #000;	
+}
+.nav__tele:hover {
+	color: red;
+}
+.menu-open {
+    background: none;
+    border: 0;
+    color: #000;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.menu-opened {
+    background: #f6f6f6;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+    flex-direction: column;
+    position: absolute;
+    width: 90%;
+    z-index: 9999;
+    box-shadow: 0 0 40px #00000073;
+}
+
+.menu.menu-opened .menu__wrap {
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+
+.menu.menu-opened .menu__item {
+    font-weight: 700;
+    font-size: 15px;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+    display: block;
+}
+
+
+/* ------ Erster Bildschirm ------ */
+
+
+.conpanel {
+	background: #ec8705 url(../img/hintergrund.jpg) no-repeat center right / cover;
+	padding: 100px 0;
+	box-shadow: 0px 10px 15px -15px black;
+	
+}
+
+.con {
+}
+
+.con__title {
+	color: #fff;
+	margin: 0;
+}
+
+.con__text {
+	color: #fff;
+	width: 270px;
+	display: block;
+	margin: 25px 0 35px;
+}
+
+.box-modal {
+    position: relative;
+    width: 414px;
+    padding: 16px;
+    color: #3c3c3c;
+    font: 14px/18px 'Museo Sans Cyrl', sans-serif;
+    border-radius: 6px;
+}
+
+.box-modal_close { position: absolute; right: 35px; top: -5px; font-size: 11px; line-height: 15px; color: #fff; cursor: pointer; }
+.box-modal_close:hover { color: #666; }
+
+
+/* ------ section 1 ------ */
+
+
+.wir {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.wir__title {
+	color: #081d42;
+	margin-bottom: 65px;
+	text-align: center;
+
+}
+
+.wir-left__wrap {
+}
+
+.wir-left__title{
+	padding-bottom: 20px;
+}
+
+.wir-left__text {
+}
+
+.wir__kont {
+	color: #000;
+}
+
+.wir__kont:hover {
+	color: #e68b06;
+}
+
+.wir-right {
+	margin: 0 auto;
+}
+
+.wir-right__title {
+	border-bottom: 1px solid #dfdfe8;
+	padding-bottom: 20px;
+}
+
+.wir-right__wrap {
+
+}
+
+.wir-right__item {
+	color: #000;
+	display: block;
+	border-bottom: 1px solid #dfdfe8;
+	padding-bottom: 12px;
+	padding-top: 12px;
+	display: flex;
+	align-items: center;
+}
+
+.wir-right__item:before {
+	content: '';
+	display: block;
+	width: 11px;
+	height: 11px;
+	background: #aeaeb9;
+	margin-right: 18px;
+	margin-left: 26px;
+}
+
+
+/* ------ section 2 ------ */
+
+
+.transport {
+	background: #f9f9f9;
+	padding: 100px 0;
+	text-align: center;
+}
+.transport__text {
+	font-size: 1.0rem;
+	text-transform: uppercase;
+}
+
+.transport__title {
+	margin-bottom: 20px;
+}
+
+.fontawesome {
+	font-size: 70px;
+	color: #fff; 
+}
+
+.transporte {
+	text-align: center;
+	background-color: #db9109;
+	width: 340px;
+	height: 220px;
+	padding: 35px 0 15px;
+	border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+	box-shadow: 5px 5px 15px -15px black;
+	box-shadow: 0 2px 7px 0 rgba(10,10,10,.05), 3px 27px 54px -34px rgba(0,0,0,.47);
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.transporte:hover {
+	box-shadow: 0 3px 10px 0 rgba(0,0,0,.07);
+}
+
+.transporte__title {
+	color: #fff;
+	text-align: center;
+	font-weight: 700;
+    display: block;
+    padding-bottom: 45px;
+}
+
+.transporte__text {
+	font-style: 13px;
+	color: #000;
+}
+
+.transporte__description {
+	width: 340px;
+	background: #fff;
+	text-align: center;
+    padding: 25px 20px 25px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 2px 7px 0 rgba(10,10,10,.05), 3px 27px 54px -34px rgba(0,0,0,.47);
+    margin: 0 auto;
+}
+
+.transporte__description:hover{
+	box-shadow: 0 3px 10px 0 rgba(0,0,0,.07);
+}
+
+.transporte__text {
+	font-style: 13px;
+}
+
+
+/* ------ section 3 ------ */
+
+
+.kunden {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.kunden__title {
+	margin-bottom: 20px;
+}
+
+.kunden__text {
+	font-size: 1.0rem;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+
+.kunde {
+
+}
+.kunde__logo {
+	text-align: center;
+}
+
+.kunde__title {
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: none;
+	margin-top: 20px;
+	margin-bottom: 7px;
+	letter-spacing: 0.04em;
+	text-align: center;
+}
+
+.kunde__text {
+	font-size: 14px;
+	width: 100%;
+	line-height: 1.5em;
+    margin-top: 21px;
+    margin-bottom: 25px;
+	text-align: center;
+}
+
+.kunde__text-job {
+	font-size: 13px;
+	color: #ec8705;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+/* ------ section 4 ------ */
+
+
+.work {}
+.workspace {
+	background: url('../img/kabine.jpg') no-repeat center center;
+	height: 450px;
+}
+
+.true {
+	background: #e4e4e4;
+	padding: 100px 0  0 100px;
+	width: 100%;
+}
+
+.true__title {
+	width: 400px;
+	line-height: 1.6em;
+	font-size: 23px;
+}
+
+.true__text {
+	margin-top: 20px;
+	margin-bottom: 32px;
+}
+
+
+/* ------ section 5 ------ */
+
+
+.formel {
+	padding: 100px 0;
+}
+
+.formel__title {
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+iframe {
+	box-shadow: 10px 10px 15px -15px black;
+	border-radius: 10px;
+}
+
+.formen {
+	width: 333px;
+	height: 450px;
+	background: #fff;
+	padding: 37px 33px;
+	text-align: center;
+	border-radius: 15px;
+	box-shadow: 10px 10px 15px -15px black;
+}
+
+.formen__title {
+	margin-bottom: 18px;
+	font-size: 20px;
+}
+
+.formen__form {
+}
+
+.formen__input {
+	font-family: 'Museo Sans Cyrl', sans-serif;
+	font-weight: 300;
+	display: block;
+	border: none;
+	border-bottom: 1px solid;
+	width: 270px;
+	padding: 18px 0 13px;
+	font-size: 13px;
+	opacity: 0.5;
+  	filter: alpha(opacity=50);
+}
+
+.formen__input:hover {
+	opacity: 1.0;
+	font-weight: bold;
+}
+
+.formen__submit {
+	font-family: 'Museo Sans Cyrl', sans-serif;
+	font-size: 14px;
+	background: #4acc4d;
+	border: 2px solid #4acc4d;
+	color: #fff;
+	cursor: pointer;
+	padding: 7px 0 9px;
+	margin-top: 20px;
+	border-radius: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.formen__daten {
+	margin-top: 20px;
+}
+
+
+/* ------ 4 kontakt ------ */
+
+
+.kontakt {
+	background: #1f2531;
+	padding-top: 100px;
+	padding-bottom: 35px;
+}
+
+.kont {
+
+}
+
+.kont__wrap {
+	margin-bottom: 45px;
+}
+
+.kont__title {
+	font-weight: 700;
+	color: #caccd0;
+	display: block;
+	margin-bottom: 16px;
+}
+
+.kont__item {
+	font-size: 14px;
+	font-weight: 300;
+	color: #a7aab0;
+	display: block;
+}
+
+.kont__item:hover {
+	color: #fff;
+}
+
+
+/* ------ 5 footer ------ */
+
+
+.footer {
+	background: #000;
+}
+
+.footer__text {
+	color: #fff;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.whatsapp {
+	position: fixed;
+	right: 40px;
+	bottom: 10px;
+	text-align: center;
+}
+
+.whatsapp__text {
+	color: #4acc4d;
+	text-align: center;
+}
+
+.telefon {
+	position: fixed;
+	left: 40px;
+	bottom: 40px;
+}
+
+
+
+/* ------ Transporte ------ */
+/* ----------------------- */
+
+
+
+.liefer {
+	padding: 100px 0;
+	background: #f9f9f9;
+}
+
+.liefer__title {
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.liefern {
+
+}
+
+.liefern__title {
+	margin: 25px 0;
+}
+
+.liefern__text {
+
+}
+
+.liefern__pic img {
+	width: 100%;
+	margin: 25px 0;
+	box-shadow: 10px 10px 15px -15px black;
+	border-radius: 10px;
+}
+
+.liefern__hotline {
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin-top: 50px;
+}
+
+.text {
+	margin-bottom: 50px;
+}
+
+
+
+/* ------ Ikea Transporte ------ */
+/* ----------------------------- */
+
+
+
+/* ------ Bordsteintransporte------ */
+/* -------------------------------- */
+
+
+
+/* ------ Impressum ------ */
+/* ----------------------- */
+
+
+
+.impressum {
+	padding: 100px 0;
+}
+.impressum__title {
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.impressum__text {
+
+}
+.imressum__zusatz {
+	font-weight: 700;
+	margin-top: 25px;
+}
+
+
+
+/* ------ Datenschutz ------ */
+/* ------------------------- */
+
+
+
+.datenschutz {
+	padding: 100px 0;
+}
+.datenschutz__title {
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.datenschutz__text {
+
+}
+.datenschutz__zusatz {
+	font-weight: 700;
+	margin-top: 25px;
+}
+
+
+
+/* ------ Media Queries ------ */
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+	iframe {
+		width: 100%;
+		margin-left: 40px;
+	}
+	.conpanel__img {
+		width: 100%;
+	}
+	.con {
+		width: 100%;
+	}
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+	.formen {
+		margin: 0 auto 50px;
+	}
+	iframe {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.kont__wrap {
+		text-align: center;
+	}
+	.kont__item {
+		text-align: center;
+	}
+	.wir-right {
+	margin: 40px auto 0;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	h2 {
+		font-size: 25px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+	.formel__title {
+	    margin-bottom: 40px;
+    }
+    .liefern__pic img {
+    	margin-top: 60px;
+    }
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+	.true {
+		padding: 100px 10px;
+		text-align: center;
+	}
+	.true__title {
+		width: 100%;
+	}
+	.true button {
+		margin: 0 auto;
+	}
+	.conpanel {
+		padding: 50px 0;
+	}
+	.conpanel__img {
+		width: 100%;
+		height: 100%;
+	}
+	.liefer__title {
+		font-size: 1.7rem;
+	}
+}
+
+
+/* 320-576px */
+
+@media screen and (max-width: 576px) {
+	
+}
